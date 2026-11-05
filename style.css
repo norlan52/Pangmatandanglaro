@@ -1,0 +1,72 @@
+/* ===== Pangkalahatang setting ng page ===== */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1a1a2e;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== Ang game canvas ===== */
+#game-canvas {
+  width: 100%;
+  max-width: 1300px;
+  height: auto;
+  background: #ffffff;
+  border: 4px solid #e94560;
+  border-radius: 8px;
+  touch-action: manipulation;     /* para hindi mag-zoom o mag-scroll ang phone kapag nag-tap */
+}
+
+/* ===== Start screen (takip sa buong screen) ===== */
+#start-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.92);
+  color: #ffffff;
+  z-index: 10;
+}
+
+#start-screen h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#start-screen p {
+  max-width: 400px;
+  color: #ffd369;
+  margin-bottom: 30px;
+}
+
+/* ===== START button ===== */
+#start-button {
+  padding: 15px 50px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: #e94560;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#start-button:hover {
+  background: #ff6b81;
+}
+
+/* ===== Itago ang start screen (id + class para mas malakas kaysa display: flex) ===== */
+#start-screen.hidden {
+  display: none;
+}
